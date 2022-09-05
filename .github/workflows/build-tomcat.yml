@@ -44,5 +44,6 @@ jobs:
 
     - name: Compile Tomcat
       run: |
+        export JAVA_HOME="/opt/hostedtoolcache/jdk/9.0.4/x64/"
         cd ./tomcat
         ant
