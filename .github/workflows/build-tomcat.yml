@@ -38,7 +38,10 @@ jobs:
           which java
           echo "whereis java"
           whereis java
-
+          echo "which javac"
+          which javac
+          echo "whereis javac"
+          whereis javac
     - name: Copy tomcat-users.xml into Tomcat configuration directory
       run: cp -v tomcat-users.xml ./tomcat/conf/tomcat-users.xml
 
