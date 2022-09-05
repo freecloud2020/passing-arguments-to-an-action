@@ -34,6 +34,10 @@ jobs:
       run: |
           ls -ltr
           java -version
+          echo "which java"
+          which java
+          echo "whereis java"
+          whereis java
 
     - name: Copy tomcat-users.xml into Tomcat configuration directory
       run: cp -v tomcat-users.xml ./tomcat/conf/tomcat-users.xml
